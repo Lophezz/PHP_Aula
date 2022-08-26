@@ -1,0 +1,30 @@
+CREATE DATABASE ExercBD01;
+
+CREATE TABLE pet(
+	NumRegistro int(80) NOT NULL PRIMARY KEY,
+    Nome varchar(50) NOT NULL,
+    Especie varchar(15) NOT NULL,
+    Raca varchar(30) NOT NULL, 
+    Cor varchar(20) NOT NULL,
+    Nascimento datetime(6) NOT NULL,
+    Sexo varchar(15) NOT NULL
+);
+
+INSERT INTO `pet`(`NumRegistro`, `Nome`, `Especie`, `Raca`, `Cor`, `Nascimento`, `Sexo`) VALUES
+('1','Pérola','Gato','Maine Coon','Preto e Branco','04/04/04','Femêa'),
+(`NumRegistro`, `Nome`, `Especie`, `Raca`, `Cor`, `Nascimento`, `Sexo`),
+('2','Afrodite','Gato','Scottish Fold','Branco','06/12/04','Femêa'),
+(`NumRegistro`, `Nome`, `Especie`, `Raca`, `Cor`, `Nascimento`, `Sexo`),
+('3','Lisa','Gato','Persa','Creme','25/01/14','Femêa'),
+('4','James','Gato','Siberiano','Preto','25/08/18','Macho'),
+('5','Charles','Gato','Siamês','Marrom Claro/Escuro','17/07/17','Macho');
+
+
+INSERT INTO `pet`(`NumRegistro`, `Nome`, `Especie`, `Raca`, `Cor`, `Nascimento`, `Sexo`) VALUES 
+('6','Kirky','Cachorro','Labrador','Bege','10/02/05','Macho'),
+('7','Jonh','Cachorro','BullDog','Laranja','11/11/11','Macho'),
+('8','Erick','Cachorro','Husky','','13/03/13','Macho'),
+('9','Suzan','Cachorro','PitBull','Cinza','01/01/01','Femêa'),
+('10','Rubi','Cachorro','','Caramelo','15/05/15','Femêa');
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

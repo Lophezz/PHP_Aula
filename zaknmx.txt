@@ -1,0 +1,12 @@
+
+require_once '../vendor/autoload.php';
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+$looger = new Logger('nomedolocal');
+$looger -> pushHandLer(new StreamHandler(_DIR_.'/App.log', Logger::DEBUG));
+
+$looger->info('Este é uma string de info...');
+$looger->warning('Isto é uma warning...');
+$looger->error('Esta é uma mensagem de erro...');

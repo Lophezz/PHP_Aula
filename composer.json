@@ -1,0 +1,18 @@
+{
+    "name": "admin/phpcomcomposer",
+    "description": "Primeiro Projeto PHP",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Admin\\Phpcomcomposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Hugo Gomes de Souza"
+        }
+    ]
+}
